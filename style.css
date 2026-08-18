@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'JBMonoEB';
+    src: url('fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'JBMonoM';
+    src: url('fonts/JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'JBMonoEBI';
+    src: url('fonts/JetBrainsMono-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'JBMonoI';
+    src: url('fonts/JetBrainsMono-Italic.woff2') format('woff2');
+    font-weight: 400;
+}
+body{
+    font-family: 'JBMonoM';
+    font-size: 16px;
+    margin: 0 auto;
+}
+.dark-theme{
+    color: aliceblue;
+    background: rgb(12, 12, 12);
+}
+.dark-theme .theme-icon{
+    fill: rgb(255, 255, 255);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.article-link{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(49, 49, 255);
+}
+.article-link:hover{
+    text-decoration: underline;
+}
+.article-link span{
+    color: rgb(92, 92, 92);
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+}
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quote{
+    font-family: "JBMonoI";
+    color: rgb(146, 146, 146);
+    margin: 0 auto;
+    max-width: 400px;
+}
+h1{
+    font-family: 'JBMonoEB';
+    font-size: 20px;
+}
+.logo{
+    font-family: 'JBMonoEBI';
+    margin: 0px;
+    color: rgb(132, 132, 255);
+    text-decoration: none;
+    font-size: 30px;
+}
+::selection {
+    background-color: rgb(162, 162, 230);
+    color: #ffffff;
+}
+::-moz-selection {
+    background-color: rgb(162, 162, 230);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 630px){
+    .content{
+        padding: 0px 16px;
+    }
+}
