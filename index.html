@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>profnablog</title>
+    <title>sanchexas</title>
 </head>
 <body>
-    <header class="content">
-        <a class="logo" href="/">profnablog</a>
-        <button onclick="switchTheme()">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="theme-icon" d="M10 3.5C11.7239 3.5 13.3772 4.18482 14.5962 5.40381C15.8152 6.62279 16.5 8.27609 16.5 10C16.5 11.7239 15.8152 13.3772 14.5962 14.5962C13.3772 15.8152 11.7239 16.5 10 16.5V3.5ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2Z" fill="black"/>
-            </svg>
-        </button>
-    </header>
-    <main class="content">
-        <p>
-            profnablog - простой, минималистичный блог-архив-дневник одного из миллиардов представителей вида Хомо Сапиенс.<br/>Здесь автор делится своими наблюдениями, исследованиями, мнением и критикой на разные темы.
-        </p>
+    <div class="wrapper">
+        <header>
+            <div class="avatar-container">
+                <img class="avatar" src="me.webp" alt="">
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <h1>Sergei <br/>Sanches-Peres</h1>
+            </div>
+        </header>
         <hr>
-        <div class="links">
-            <a href="/ai-and-coding" class="article-link">ИИ и кодинг<span>18.08.2026</span></a>
-        </div>
-    </main>
-    <footer class="content">
-
-    </footer>
-    <script src="./script.js"></script>
+        <main>
+            <p>Hi! I'm a software developer.</p>
+            <p>I've been working with code for several years, mostly around Python, web development and computer vision. I've built web applications and APIs, worked with databases and Linux servers, deployed systems in real-world environments, and even helped develop the vision system for a robot designed to solder microcomponents.</p>
+            
+            <p>One of the projects I'm most proud of started as a completely new direction within my company. I helped build a computer vision system for automated quality control at poultry farms - from preparing datasets and developing image-processing software to setting up cameras, servers and databases on-site. <br/> The system eventually grew into a <span style="background: rgb(255, 208, 0); color: black;">production solution used by 8 poultry farms across Russia.</span> </p>
+            <img src="mywork.webp" alt="">
+            <img class="cropped-gif" src="wires.gif" alt="">
+            <p>I also enjoy building small tools that make everyday work easier. Sometimes it's a full application, sometimes it's a simple script that saves someone an hour of repetitive work.</p>
+            <p>Right now, I'm looking forward to new challenges, interesting projects and opportunities!</p>
+            <p>Peace! ☮︎</p>
+        </main>
+        <hr>
+        <footer>
+            <p>E-mail: <a href="mailto:sergeisanchesperes@gmail.com">sergeisanchesperes@gmail.com</a></p>
+            <p>Telegram: <a href="http://t.me/sanchexas">@sanchexas</a></p>
+            <p>GitHub: <a href="https://github.com/sanchexas">sanchexas</a></p>
+        </footer>
+    </div>
 </body>
 </html>
