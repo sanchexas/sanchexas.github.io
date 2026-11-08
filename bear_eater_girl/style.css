@@ -1,0 +1,143 @@
+body {
+    background-image: url(./1STBOOT.jpg);
+    background-size: 100%;
+    margin: 0 auto;
+    font-family: monospace;
+    color: white;
+}
+
+.wrapper {
+    max-width: 450px;
+    background: black;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid red;
+}
+
+.cat-img {
+    width: 200px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.head-lesya-pic {
+    border: 1px solid red;
+    width: 200px;
+}
+
+.head-bat-gif {
+    width: 202px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.marquee {
+    /* width: 100%; */
+    overflow: hidden;
+    color: #111;
+    /* padding: 16px 0; */
+}
+
+/* Лента: две одинаковые группы подряд */
+.marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marquee 4s linear infinite;
+}
+
+/* Пауза при наведении (можно удалить) */
+/* .marquee:hover .marquee__track {
+    animation-play-state: paused;
+} */
+
+.marquee__group {
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* Отступ только справа у КАЖДОГО элемента —
+     поэтому на стыке групп расстояние такое же, как везде */
+.marquee__item {
+    padding-right: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Сдвигаем ровно на одну группу (половину ленты) — шов не виден */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee__track {
+        animation-duration: 8s;
+    }
+}
+
+::selection {
+    background-color: var(--ACCENT_COLOR);
+    color: var(--BG);
+}
+
+::-moz-selection {
+    background-color: var(--ACCENT_COLOR);
+    color: var(--BG);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ea00e2;
+    /* border-radius: 6px; */
+    /* border: 1px solid black; */
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: var(--BG);
+} */
+
+@media (max-width: 600px) {
+    .wrapper {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .btm{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .head-bat-gif {
+        width: 152px;
+    }
+
+    .head-lesya-pic {
+        width: 150px;
+    }
+}
